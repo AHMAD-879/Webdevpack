@@ -1,0 +1,27 @@
+body
+{
+    /* Locate the footer at the bottom */
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main
+{
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* Center contents */
+    text-align: center;
+
+    /* Locate the footer at the bottom */
+    display: block;
+    flex: 1 0 auto;
+}
+
+main img
+{
+    /* Constrain images on small screens */
+    max-width: 100%;
+}
