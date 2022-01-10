@@ -1,8 +1,7 @@
 {% extends "layout.html" %}
 
 {% block head %} 
-        <!-- https://github.com/itsjavi/bootstrap-colorpicker -->
-        <link href="/bootstrap-colorpicker\dist\css\bootstrap-colorpicker.css" rel="stylesheet">
+    <link href="/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css" rel="stylesheet">
 {% endblock %} 
 
 {% block title %}
@@ -11,10 +10,18 @@
 
 {% block main %}
     <h1> Color Picker. </h1>
-    <input id="cp1" type="text" class="form-control input-lg" value=""/>
+    <script src="/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js"></script>
     <script>
-    $(function () {
-        $('#cp1').colorpicker();
-    });
+        $(function () {
+        // Basic instantiation:
+        $('#demo-input').colorpicker();
+        
+        // Example using an event, to change the color of the #demo div background:
+        $('#demo-input').on('colorpickerChange', function(event) {
+            $('#demo').css('background-color', event.color.toString());
+        });
+        });
     </script>
+
+
 {% endblock %}
