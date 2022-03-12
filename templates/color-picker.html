@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block head %} 
-    <link href="/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css" rel="stylesheet">
+    
 {% endblock %} 
 
 {% block title %}
@@ -9,7 +9,13 @@
 {% endblock %}
 
 {% block main %}
+    <!-- https://github.com/itsjavi/bootstrap-colorpicker -->
     <h1> Color Picker. </h1>
+    <div class="demo">
+        <h1>Bootstrap Colorpicker Demo (with Bootstrap)</h1>
+        <input id="demo-input" type="text" value="rgb(255, 128, 0)" />
+    </div>
+
     <script src="/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js"></script>
     <script>
         $(function () {

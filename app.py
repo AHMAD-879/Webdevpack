@@ -16,7 +16,17 @@ def color_picker():
     """Color Picker"""
     return render_template("color-picker.html")
 
+@app.route("/regex-generator")
+def regex_generator():
+    """RegEx Generator"""
+    return render_template("regex-generator.html")
+
 @app.route("/pixel-locator")
 def pixel_locator():
     """Pixel Locator"""
     return render_template("pixel-locator.html")
+
+@app.route("/testing2")
+def testing2():
+    """Testing 2"""
+    return render_template("testing2.html")
