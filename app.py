@@ -26,7 +26,7 @@ def pixel_locator():
     """Pixel Locator"""
     return render_template("pixel-locator.html")
 
-@app.route("/testing2")
+@app.route("/testing")
 def testing2():
-    """Testing 2"""
-    return render_template("testing2.html")
+    """Testing"""
+    return render_template("testing.html")

@@ -8,6 +8,6 @@ The third (possible) tool is a Pixel Locator, which identifies any pixel's x,y c
 
 
 
-TODO: Add other tools (e.g. From Bootstrap 4: Loading spinner generator, Progress bar generator, etc.)
+Possible: Add other tools (e.g. From Bootstrap 4: Loading spinner generator, Progress bar generator, etc.)
 
 Additional Note: check https://github.com/yangcha/iview for Pixel Locator inspiration.
