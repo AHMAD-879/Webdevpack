@@ -7,8 +7,12 @@
 {% block main %}
     <h1> RegEx Generator. </h1>
     <!-- 
-        TODO: Add rows of user input for "permitted characters", as well as "obligatory characters".
-        Divide input sections into "Letters", "Numbers", and "Symbols".
+        TODO: The layout for the RegEx generator:-
+        Starts with an area (div?) for a "String", in which user can choose from checklist of letters, numbers, and symbols.
+        For each type, user can choose "obligatory characters", "excluded characters" (slide menu or typing in input) and the "amount" (range from _ to _ with inf).
+        Then, user can "Add new string" after the previous string, in which he can choose a new collection of characters.
+        
+        e.g. For email, add string "Any alnum", then add string "@" only, then string "Any alnum", then ".", then "Any alnum". (Or maybe more than one dot for multiple domains like .edu.sa) 
         Perhaps add "Presets" or "Premade patterns" such as email: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
     -->
 
