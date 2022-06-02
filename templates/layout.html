@@ -14,11 +14,11 @@
         <!-- https://icon-library.com/images/html5-icon-png/html5-icon-png-9.jpg -->
         <link href="/static/icon.png" rel="icon">
 
-        <link href="/static/styles.css" rel="stylesheet">
-
-        <title> Webdevpack: {% block title %}{% endblock %}</title>
+        <title> Webdevpack | {% block title %}{% endblock %}</title>
 
         {% block head %}{% endblock %}
+
+        <link href="/static/styles.css" rel="stylesheet">
 
     </head>
 
@@ -38,7 +38,6 @@
             <div class="navbar-nav">
               <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
               <a class="nav-link" href="/color-picker">Color Picker</a>
-              <a class="nav-link" href="/testing">Testing</a>
               <a class="nav-link disabled" href="/" tabindex="-1" aria-disabled="true">Coming Soon..</a>
             </div>
           </div>

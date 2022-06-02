@@ -5,27 +5,17 @@
 {% endblock %}
 
 {% block head %} 
-    <link href="../bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css" rel="stylesheet">
+  <link href="../static/color-picker.css" rel="stylesheet">
+  <script src="./color-picker.js"></script> 
 {% endblock %} 
 
 {% block main %}
-    <!-- https://github.com/itsjavi/bootstrap-colorpicker -->
-    <div class="demo">
-        <h1>Bootstrap Colorpicker Demo (with Bootstrap)</h1>
-        <input id="demo-input" type="text" value="rgb(255, 128, 0)" />
-    </div>
-    <script src="//code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="//unpkg.com/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js"></script>
-    <script>
-      $(function () {
-        // Basic instantiation:
-        $('#demo-input').colorpicker();
-        
-        // Example using an event, to change the color of the #demo div background:
-        $('#demo-input').on('colorpickerChange', function(event) {
-          $('#demo').css('background-color', event.color.toString());
-        });
-      });
-    </script>
+
+<h1> Color Picker </h1> <br/>
+
+  <div class="color_picker"> 
+    <input type="color" id="colorPicker" value="#E93E30"> 
+    <label for="colorPicker" id="colorLabel">  Hex : </label>
+  </div>
+
 {% endblock %}
