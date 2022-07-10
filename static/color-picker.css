@@ -24,6 +24,18 @@
 }
 
 label {
-    font-family: Verdana;
+    font-family: "JetBrains Mono",monospace;
     font-size: large;
+}
+
+button {
+    padding: 15px 15px;
+    border-radius: 20px;
+    border: 3px solid #ccc;
+    background: #f8f9f9;
+    cursor: pointer;
+    font-family: "JetBrains Mono",monospace;
+}
+button:hover {
+    background-color: #ccc;
 }

@@ -6,7 +6,7 @@
 
 {% block head %} 
   <link href="../static/color-picker.css" rel="stylesheet">
-  <script async src="./color-picker.js"></script> 
+  <script async src="../static/color-picker.js"></script> 
 {% endblock %} 
 
 {% block main %}
@@ -15,7 +15,10 @@
 
   <div class="color_picker"> 
     <input type="color" id="colorPicker" value="#E93E30"> 
-    <label for="colorPicker" id="colorLabel"> Hex: </label>
+    <label for="colorPicker" id="colorLabel">Hex:</label>
   </div>
+  <br> 
+
+  <button id="copyBtn" type="button" data-toggle="tooltip" data-placement="bottom" title="Copied to clipboard!">Copy Hex</button>
 
 {% endblock %}
