@@ -1,13 +1,14 @@
+// Constant variables for HTML elements
 const colorPicker = document.getElementById("colorPicker");
 const label = document.getElementById("colorLabel");
 const copyBtn = document.getElementById("copyBtn");
 
-// Event listener for the Color Picker, changes the label to the current Hex value
+// Changes the label to view the current Hex value when user changes the input
 colorPicker.addEventListener("input", function() {
     label.innerHTML = "Hex: " + colorPicker.value;
 }); 
 
-// Event listener for the Copy button, copies the Hex value to clipboard
+// Copies the Hex value to clipboard when user clicks copy
 copyBtn.addEventListener("click", function() {
     var hex = colorPicker.value;
     navigator.clipboard.writeText(hex);
@@ -15,7 +16,7 @@ copyBtn.addEventListener("click", function() {
     $('[data-toggle="tooltip"]').tooltip('enable').tooltip('show');
 });
 
-// Event listener for Copy button, disables tooltip when user moves mouse out of the button
+// Disables tooltip when user moves mouse out of the button
 copyBtn.addEventListener("mouseout", function() {
     $('[data-toggle="tooltip"]').tooltip('disable');
 });
