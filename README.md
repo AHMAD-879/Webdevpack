@@ -1,5 +1,9 @@
-# Webdevpack, a website offering tools that help web devs and make their lives easier.
+# Webdevpack
+## A website offering tools that help web devs and (hopefully) make their lives easier.
+<br>
 
-**Color Picker**, a useful tool that lets a user pick a color and displays the Hex value.
+The only tool currently available is the **Color Picker**, which is a useful tool that lets the user pick a color and displays the corresponding RGB, HSL and Hex codes.
 
-> Your README.md file should be minimally multiple paragraphs in length, and should explain what your project is, what each of the files you wrote for the project contains and does, and if you debated certain design choices, explaining why you made them. Ensure you allocate sufficient time and energy to writing a README.md that you are proud of and that documents your project thoroughly. Be proud of it!
+<br> 
+
+#### Video Demo:
